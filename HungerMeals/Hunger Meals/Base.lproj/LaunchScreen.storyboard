@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="jqA-7w-yvU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="3kb-cJ-uQd" userLabel="Logo">
+                                <rect key="frame" x="147" y="308" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Kr5-yq-9jP"/>
+                                    <constraint firstAttribute="height" constant="120" id="ue7-Hc-5hf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jqA-7w-yvU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="0Vg-Ih-cec"/>
+                            <constraint firstItem="3kb-cJ-uQd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FAo-KJ-A1n"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jqA-7w-yvU" secondAttribute="bottom" id="ed3-Ct-JJi"/>
+                            <constraint firstItem="3kb-cJ-uQd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vjT-fi-oBW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jqA-7w-yvU" secondAttribute="trailing" constant="-20" id="vow-xg-WGJ"/>
+                            <constraint firstItem="jqA-7w-yvU" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="vsC-LD-7dO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="view" destination="Ze5-6b-2t3" id="0Dd-Fq-Jfv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="90" height="90"/>
+        <image name="SplashScreen" width="300" height="450"/>
+    </resources>
+</document>
